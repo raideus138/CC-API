@@ -6,7 +6,6 @@ const PORT = process.env.PORT || 3000;
 const cc = data.data.colo_colo;
 const players = data.data.players;
 
-// Ruta de ejemplo
 app.get('/', (req, res) => {
     res.send('rest');
 });
@@ -30,7 +29,6 @@ app.get('/players/:number', (req, res) => {
     }
 });
 
-// Iniciar el servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto http://localhost:${PORT}`);
 });
